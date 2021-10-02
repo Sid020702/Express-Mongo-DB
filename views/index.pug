@@ -1,0 +1,57 @@
+doctype html
+html
+  head
+    style
+      include ../static/style.css
+  body
+    nav#navbar
+        ul
+            div#logo
+                img(src="/static/3.png")
+                | SDA
+            li #[a(href="/") Home]
+            li #[a(href="/") About]
+            li #[a(href="/") Contact]
+            li #[a(href="/") Class info]
+            li #[a(href="/") Services]
+    section#introSection
+        div Welcome to Sid's Dance Academy
+        div.small Eat.Sleep.Dance.Repeat
+    section#missionSection 
+        h2 Our Mission
+        div.card
+            h3 Dance Perfection
+            div.card-box
+                div.card-image
+                    img(src="/static/1.jpg")
+
+                div.card-content
+                    p This is the best dance academy in the world.
+        div.card
+            h3 Dance the way you like
+            div.card-box
+                div.card-image
+                    img(src="/static/4.png")
+
+                div.card-content
+                    p This is the best dance academy in the world.
+        div.card
+            h3 Expert teaching
+            div.card-box
+                div.card-image
+                    img(src="/static/2.png")
+
+                div.card-content
+                    p This is the best dance academy in the world.
+    section#sponserSection
+        h2 Our Sponsers 
+        div#sponsers
+            img(src="/static/logo1.webp",alt="Sponser Image",class="spImage")
+            img(src="/static/logo2.png",alt="Sponser Image",class="spImage")
+            img(src="/static/logo3.webp",alt="Sponser Image",class="spImage")
+            img(src="/static/logo4.png",alt="Sponser Image",class="spImage")
+    footer#footer 
+        | Copyright © 2021 SidharthDanceAcademy.com | All rights reserved
+       
+    script
+      include ../static/index.js
